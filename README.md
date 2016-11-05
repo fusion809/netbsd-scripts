@@ -1,9 +1,9 @@
-# OpenBSD Scripts
-This repository contains scripts for automating common tasks under OpenBSD.
+# NetBSD Scripts
+This repository contains scripts for automating common tasks under NetBSD.
 
 ## Quick Install
 To quickly install this repository run:
 
 ```bash
-/usr/local/bin/bash -c "$(curl -L https://git.io/vX8vI)"
+/usr/pkg/bin/bash -c "$(curl -L https://git.io/vX8mx)"
 ```

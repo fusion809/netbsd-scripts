@@ -1,11 +1,11 @@
-#!/usr/local/bin/bash
+#!/usr/pkg/bin/bash
 # Create GitHub directory
 if ! [[ -d $HOME/GitHub/mine/scripts ]]; then
   mkdir -p $HOME/GitHub/mine/scripts
 fi
 
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/X11R6/bin:/usr/games
-export PKG_PATH=http://mirror.aarnet.edu.au/pub/OpenBSD/$(uname -r)/packages/$(uname -p)/
+export PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/amd64/7.0_current/All/
 
 # Get openssh, if not pre-installed and Zsh
 sudo pkg_add zsh git bash
