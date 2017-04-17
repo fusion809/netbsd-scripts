@@ -1,2 +1,2 @@
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/X11R6/bin:/usr/games
-export PKG_PATH=http://mirror.aarnet.edu.au/pub/OpenBSD/$(uname -r)/packages/$(uname -p)/
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/pkg/bin
+export PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -p)/$(uname -r)/All/
