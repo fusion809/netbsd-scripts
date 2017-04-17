@@ -78,6 +78,6 @@ if ! [[ -d $HOME/.oh-my-zsh/plugins/zsh-history-substring-search ]]; then
 fi
 
 # Change default login shell to Zsh
-chsh -s /usr/local/bin/zsh
-sudo chsh -s /usr/local/bin/zsh
-/usr/local/bin/zsh
+chsh -s /usr/pkg/bin/zsh
+sudo chsh -s /usr/pkg/bin/zsh root
+/usr/pkg/bin/zsh
