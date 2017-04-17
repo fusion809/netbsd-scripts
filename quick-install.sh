@@ -10,42 +10,42 @@ export PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/amd64/7.0_curren
 # Get openssh, if not pre-installed and Zsh
 sudo pkg_add zsh git bash
 
-# Clone openbsd-scripts repo
-if ! [[ -d $HOME/GitHub/mine/scripts/openbsd-scripts ]]; then
-  git clone https://github.com/fusion809/openbsd-scripts $HOME/GitHub/mine/scripts/openbsd-scripts
+# Clone netbsd-scripts repo
+if ! [[ -d $HOME/GitHub/mine/scripts/netbsd-scripts ]]; then
+  git clone https://github.com/fusion809/netbsd-scripts $HOME/GitHub/mine/scripts/netbsd-scripts
   # Copy across
-  cp $HOME/GitHub/mine/scripts/openbsd-scripts/{.bashrc,.zshrc} $HOME/
+  cp $HOME/GitHub/mine/scripts/netbsd-scripts/{.bashrc,.zshrc} $HOME/
   if ! [[ -d $HOME/Shell ]]; then
     mkdir -p $HOME/Shell
   fi
-  cp $HOME/GitHub/mine/scripts/openbsd-scripts/Shell/* $HOME/Shell
+  cp $HOME/GitHub/mine/scripts/netbsd-scripts/Shell/* $HOME/Shell
   if ! [[ -d /root/Shell ]]; then
     sudo mkdir -p /root/Shell
   fi
-  sudo cp $HOME/GitHub/mine/scripts/openbsd-scripts/root/{.bashrc,.zshrc} /root/
-  sudo cp $HOME/GitHub/mine/scripts/openbsd-scripts/root/Shell/* /root/Shell
-elif [[ -d $HOME/GitHub/openbsd-scripts ]]; then
-  cd $HOME/GitHub/openbsd-scripts
+  sudo cp $HOME/GitHub/mine/scripts/netbsd-scripts/root/{.bashrc,.zshrc} /root/
+  sudo cp $HOME/GitHub/mine/scripts/netbsd-scripts/root/Shell/* /root/Shell
+elif [[ -d $HOME/GitHub/netbsd-scripts ]]; then
+  cd $HOME/GitHub/netbsd-scripts
   git pull origin master
   cd -
   # Copy across
-  cp $HOME/GitHub/openbsd-scripts/{Shell,.bashrc,.zshrc} $HOME/
-  sudo cp $HOME/GitHub/openbsd-scripts/root/{Shell,.bashrc,.zshrc} /root/
-elif [[ -d $HOME/GitHub/mine/scripts/openbsd-scripts ]]; then
-  cd $HOME/GitHub/mine/scripts/openbsd-scripts
+  cp $HOME/GitHub/netbsd-scripts/{Shell,.bashrc,.zshrc} $HOME/
+  sudo cp $HOME/GitHub/netbsd-scripts/root/{Shell,.bashrc,.zshrc} /root/
+elif [[ -d $HOME/GitHub/mine/scripts/netbsd-scripts ]]; then
+  cd $HOME/GitHub/mine/scripts/netbsd-scripts
   git pull origin master
   cd -
   # Copy across
-  cp $HOME/GitHub/mine/scripts/openbsd-scripts/{.bashrc,.zshrc} $HOME/
+  cp $HOME/GitHub/mine/scripts/netbsd-scripts/{.bashrc,.zshrc} $HOME/
   if ! [[ -d $HOME/Shell ]]; then
     mkdir -p $HOME/Shell
   fi
-  cp $HOME/GitHub/mine/scripts/openbsd-scripts/Shell/* $HOME/Shell
+  cp $HOME/GitHub/mine/scripts/netbsd-scripts/Shell/* $HOME/Shell
   if ! [[ -d /root/Shell ]]; then
     sudo mkdir -p /root/Shell
   fi
-  sudo cp $HOME/GitHub/mine/scripts/openbsd-scripts/root/{.bashrc,.zshrc} /root/
-  sudo cp $HOME/GitHub/mine/scripts/openbsd-scripts/root/Shell/* /root/Shell
+  sudo cp $HOME/GitHub/mine/scripts/netbsd-scripts/root/{.bashrc,.zshrc} /root/
+  sudo cp $HOME/GitHub/mine/scripts/netbsd-scripts/root/Shell/* /root/Shell
 fi
 
 if ! [[ -d $HOME/.oh-my-zsh ]]; then
