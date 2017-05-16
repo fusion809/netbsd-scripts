@@ -17,3 +17,7 @@ function cdgm {
 function cdsc {
   cdgm "scripts/$1"
 }
+
+function cdns {
+	cdsc "netbsd-scripts/$1"
+}
