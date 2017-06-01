@@ -119,4 +119,4 @@ do
   . "$i"
 done
 
-PATH=$PATH:$HOME/.local/bin
+PATH=$PATH:$HOME/.local/bin:/usr/pkg/bin
