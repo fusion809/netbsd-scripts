@@ -1,5 +1,5 @@
 function pkgup {
-  sudo pkg_add -uu
+  sudo pkg_chk -u -q
 }
 
 function pkgin {
